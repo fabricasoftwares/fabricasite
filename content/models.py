@@ -33,6 +33,7 @@ class Project(models.Model):
 class Members(models.Model):
     """
     Model responsável por abstrair as informações dos membros da fábrica.
+
     """
     is_active = models.BooleanField(default=True)
     photo = models.ImageField(upload_to='img/members/', null=False)
@@ -41,3 +42,9 @@ class Members(models.Model):
     github = models.URLField(blank=True)
     instagram = models.URLField(blank=True)
     linkedin = models.URLField(blank=True)
+
+
+
+
+
+

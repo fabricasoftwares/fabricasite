@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'content',
     'section',
+    'config',
 ]
 
 MIDDLEWARE = [
