@@ -1,2 +1,5 @@
 db.sqlite3
 *.swp
+img/*
+*.pyc
+__pycache__/
