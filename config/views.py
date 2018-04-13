@@ -6,5 +6,5 @@ from config.serializers import FactorySerializer
 
 class FactoryView(viewsets.ReadOnlyModelViewSet):
     """Endpoint que possibilita visualizações dos serviços."""
-    queryset = Factory.objects.first()
+    queryset = Factory.objects.all()
     serializer_class = FactorySerializer
