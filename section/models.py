@@ -51,6 +51,7 @@ class Subsection(models.Model):
     section = models.ForeignKey(
         Section,
         on_delete=models.CASCADE,
+        related_name='sub_sections',
         verbose_name='Seção'
     )
 
