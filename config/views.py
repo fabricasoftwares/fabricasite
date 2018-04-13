@@ -1,3 +1,10 @@
-from django.shortcuts import render
+"""Enpoints para o conteúdo."""
+from rest_framework import viewsets
 
-# Create your views here.
+from config.models import Factory
+from config.serializers import FactorySerializer
+
+class FactoryView(viewsets.ReadOnlyModelViewSet):
+    """Endpoint que possibilita visualizações dos serviços."""
+    queryset = Factory.objects.first()
+    serializer_class = FactorySerializer

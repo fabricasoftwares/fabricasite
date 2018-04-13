@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', include_docs_urls(title='Documentação - Website BayArea')),
 
+    path('config/', include('config.urls')),
     path('content/', include('content.urls')),
     path('sections/', include('section.urls')),
 ]
