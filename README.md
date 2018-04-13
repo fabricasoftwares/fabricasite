@@ -51,3 +51,7 @@ cd /path/to/project
 ./manage.py test
 
 ```
+
+## Para acessar a documentação da API
+
+> Acesse: http://localhost:8000/docs/
